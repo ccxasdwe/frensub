@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.71.213
-  port: 443
+  server: 172.64.155.209
+  port: 8443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
+  tls: true
+  servername: pubb.clnahanpnln.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /sync
+    headers:
+      Host: pubb.clnahanpnln.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
