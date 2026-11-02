@@ -6,25 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "188.114.96.198",
-      "server_port": 443,
-      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tepar-k4j9.jounet.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/DEVCOP/8651a8ada76c/loc-1",
-        "headers": {
-          "Host": "tepar-k4j9.jounet.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -34,6 +15,18 @@
         "headers": {
           "Host": "95.174.68.188"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
+      "server": "217.60.73.56",
+      "server_port": 443,
+      "password": "69e41e64-a832-471a-b740-94577ca85520",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": true
       }
     },
     {
