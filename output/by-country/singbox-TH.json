@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "38.60.233.126",
       "server_port": 33079,
       "password": "5t6i121em5lkmsmk",
@@ -16,18 +24,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "103.107.53.42",
+      "server_port": 443,
+      "uuid": "affb10d4-3835-4b1f-b5a3-3481489911b6",
+      "tls": {
+        "enabled": true,
+        "server_name": "cat.ilovezhenjiu.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cgciws",
+        "headers": {
+          "Host": "cat.ilovezhenjiu.top"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
