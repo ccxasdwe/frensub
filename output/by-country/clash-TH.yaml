@@ -20,21 +20,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 103.107.53.42
-  port: 443
-  udp: true
-  type: vless
-  uuid: affb10d4-3835-4b1f-b5a3-3481489911b6
-  tls: true
-  servername: cat.ilovezhenjiu.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cgciws
-    headers:
-      Host: cat.ilovezhenjiu.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 rules:
 - MATCH,PROXIES
