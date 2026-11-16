@@ -39,38 +39,63 @@
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
       "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
+      "server": "84.247.155.196",
       "server_port": 443,
       "method": "aes-256-gcm",
       "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
-      "server": "zfapi.zalolink.com",
-      "server_port": 43149,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
+      "server": "104.21.33.59",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
-          "short_id": "15aa0ad4"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - xiaohe",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - xiaohe",
+      "server": "154.31.114.162",
+      "server_port": 8443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
     },
     {
       "type": "selector",
@@ -82,7 +107,8 @@
         "🇯🇵 日本 (Japan) 03 - xiaohe",
         "🇯🇵 日本 (Japan) 04 - xiaohe",
         "🇯🇵 日本 (Japan) 05 - xiaohe",
-        "🇯🇵 日本 (Japan) 06 - xiaohe"
+        "🇯🇵 日本 (Japan) 06 - xiaohe",
+        "🇯🇵 日本 (Japan) 07 - xiaohe"
       ]
     },
     {
@@ -94,7 +120,8 @@
         "🇯🇵 日本 (Japan) 03 - xiaohe",
         "🇯🇵 日本 (Japan) 04 - xiaohe",
         "🇯🇵 日本 (Japan) 05 - xiaohe",
-        "🇯🇵 日本 (Japan) 06 - xiaohe"
+        "🇯🇵 日本 (Japan) 06 - xiaohe",
+        "🇯🇵 日本 (Japan) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
