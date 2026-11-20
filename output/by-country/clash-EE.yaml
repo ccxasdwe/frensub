@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 104.17.3.81
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 217.60.100.222
   port: 443
   udp: true
   type: vless
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
+  uuid: a6142d9d-3f9f-47b7-b7e9-1245dd6a15d6
+  flow: xtls-rprx-vision
   tls: true
-  servername: natan.srpcom.cloud
+  servername: 217.60.100.222
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: natan.srpcom.cloud
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
