@@ -4,27 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
-  port: 50738
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 213.183.45.23
+  port: 8450
   udp: true
   type: vless
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   tls: true
-  servername: turkey-ip1.mmdaqaorg.xyz
+  servername: fonts.plumstatic.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
